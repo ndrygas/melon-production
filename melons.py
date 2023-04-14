@@ -34,9 +34,13 @@ class Melon:
 
 class Squash(Melon):
     """Winter squash."""
+    
+    def prep(self):
+        """Prepare the melon."""
 
-    # FIX ME: Add Squash class definition here.
-    def __init__(self, Melon_Type):
-        self.color = "Green"
+        robots.cleanerbot.clean(self)
+        robots.stickerbot.apply_logo(self)
+        robots.painterbot.paint(self)
 
+   
     
